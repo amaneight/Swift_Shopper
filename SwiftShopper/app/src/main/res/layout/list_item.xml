@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Product id (pid) - will be HIDDEN - used to pass to other activity -->
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Product barcode (barcode) - will be HIDDEN - used to pass to other activity -->
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Product Name  -->
+    <TextView
+        android:id="@+id/name"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dip"
+        android:paddingLeft="6dip"
+        android:textSize="17dip"
+        android:textStyle="bold" />
+
+
+    <!-- Product Amount  -->
+        <TextView
+            android:id="@+id/amount"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dip"
+            android:paddingLeft="6dip"
+            android:textSize="17dip"
+            android:textStyle="bold"
+            android:gravity="right"
+
+            />
+
+    <!-- Product Description  -->
+    <TextView
+        android:id="@+id/viewDesc"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dip"
+        android:paddingLeft="6dip"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        android:gravity="left"
+
+        />
+
+
+
+
+
+</LinearLayout>

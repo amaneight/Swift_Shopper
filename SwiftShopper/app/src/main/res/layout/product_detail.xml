@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Barcode Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bar Code"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"
+            />
+
+        <!-- View Barcode -->
+        <TextView android:id="@+id/viewBarcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"/>
+
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"/>
+
+        <!-- View Name -->
+        <TextView android:id="@+id/viewName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"/>
+
+        <!-- Brand Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"/>
+
+        <!-- View Brand -->
+        <TextView android:id="@+id/viewBrand"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"/>
+
+        <!-- Price Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"/>
+
+        <!-- View Price -->
+        <TextView android:id="@+id/viewPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+        <!-- Available Quantity Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Quantity"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"/>
+
+        <!-- View Quantity -->
+        <TextView android:id="@+id/viewQuantity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+        <!-- Required Quantity Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Required Quantity"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"/>
+
+        <!-- Input Required Quantity -->
+        <EditText android:id="@+id/inputReqQty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+
+        <!-- Weight Label -->
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"/>
+
+        <!-- View Weight -->
+        <TextView android:id="@+id/viewWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Description Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"/>
+
+        <!-- View description -->
+        <TextView android:id="@+id/viewDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:lines="4"
+            android:gravity="top"/>
+    </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Button Save Product -->
+            <Button android:id="@+id/btnAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:layout_weight="1"/>
+
+            <!-- Button Home -->
+            <Button android:id="@+id/btnPlaceOrder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Order"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
